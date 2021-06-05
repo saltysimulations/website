@@ -12,19 +12,19 @@ export const NavBar: React.FC = () => {
                 />
             </div>
             <div className="flex flex-row justify-around items-center text-white text-lg mr-4">
-                <Link href="/home">
-                    <a className="m-4">Home</a>
-                </Link>
-                <Link href="/home">
-                    <a className="m-4">Projects</a>
-                </Link>
-                <Link href="/home">
-                    <a className="m-4">Documentation</a>
-                </Link>
-                <Link href="/home">
-                    <a className="m-4">About</a>
-                </Link>
+                <NavItem label="Home" path="/"/>
+                <NavItem label="Projects" path="/projects"/>
+                <NavItem label="Documentation" path="/documentation"/>
+                <NavItem label="About" path="/about"/>
             </div>
         </nav>
     );
 };
+
+type NavItemProps = { label: string, path: string };
+
+const NavItem: React.FC<NavItemProps> = ({ label, path }) => (
+    <Link href={path}>
+        <a className="m-4">{label}</a>
+    </Link>
+);
