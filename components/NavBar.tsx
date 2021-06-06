@@ -41,8 +41,6 @@ const Hamburger: FC<HamburgerProps> = ({ onClick, isOpen }) => (
         } transition-transform duration-400 m-8`}
         onClick={onClick}
     >
-        <div className={`w-full h-1/6 ${isOpen ? "bg-celeste" : "bg-white"} rounded`} />
-        <div className={`w-full h-1/6 ${isOpen ? "bg-celeste" : "bg-white"} rounded`} />
-        <div className={`w-full h-1/6 ${isOpen ? "bg-celeste" : "bg-white"} rounded`} />
+        {Array.from(Array(3), (_, i) => <div className={`w-full h-1/6 ${isOpen ? "bg-celeste" : "bg-white"} rounded`} key={i} />)}
     </div>
 );
