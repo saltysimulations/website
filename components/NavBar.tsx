@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FC } from "react";
 
-export const NavBar: React.FC = () => {
+export const NavBar: FC = () => {
     return (
         <nav className="w-full h-20 bg-gray flex flex-row justify-between">
             <div className="flex ml-8">
@@ -23,8 +24,8 @@ export const NavBar: React.FC = () => {
 
 type NavItemProps = { label: string, path: string };
 
-const NavItem: React.FC<NavItemProps> = ({ label, path }) => (
+const NavItem: FC<NavItemProps> = ({ label, path }) => (
     <Link href={path}>
-        <a className="m-4">{label}</a>
+        <a className="m-4 hover:text-celeste transition duration-400">{label}</a>
     </Link>
 );
