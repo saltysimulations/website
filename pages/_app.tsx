@@ -1,6 +1,7 @@
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import { NavBar } from "../components/NavBar";
+import { Footer } from "../components/Footer";
 import "../styles/globals.css";
 
 const App = ({ Component, pageProps }: AppProps) => (
@@ -10,6 +11,7 @@ const App = ({ Component, pageProps }: AppProps) => (
         </Head>
         <NavBar />
         <Component {...pageProps} />
+        <Footer />
     </div>
 );
 
