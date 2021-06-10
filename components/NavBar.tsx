@@ -1,18 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 
 export const NavBar: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolledDown, setIsScrolledDown] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setIsScrolledDown(window.scrollY > 1);
+        });
+    }, []);
+
     return (
-        <nav className="w-full h-20 fixed bg-gray flex flex-row justify-between items-center z-50">
+        <nav
+            className={`w-full h-20 fixed ${
+                isScrolledDown || isOpen ? "bg-gray" : "bg-transparent"
+            } transition duration-400 flex flex-row justify-between items-center z-50`}
+        >
             <div className="flex ml-8">
                 <Image src="/svg/salty-logo-white.svg" width={130} height={70} />
             </div>
             <div
                 className={`md:visible md:opacity-100 flex md:flex-row flex-col md:static absolute ${
                     isOpen ? "opacity-100" : "invisible opacity-0"
-                } top-20 w-full md:w-auto justify-around items-center text-white bg-gray text-lg mr-4 transition-opacity duration-400`}
+                } top-20 w-full md:w-auto justify-around items-center text-white bg-gray md:bg-transparent text-lg mr-4 transition-opacity duration-400`}
             >
                 <NavItem label="Home" path="/" />
                 <NavItem label="Projects" path="/projects" />
@@ -41,6 +53,8 @@ const Hamburger: FC<HamburgerProps> = ({ onClick, isOpen }) => (
         } transition-transform duration-400 m-8`}
         onClick={onClick}
     >
-        {Array.from(Array(3), (_, i) => <div className={`w-full h-1/6 ${isOpen ? "bg-celeste" : "bg-white"} rounded`} key={i} />)}
+        {Array.from(Array(3), (_, i) => (
+            <div className={`w-full h-1/6 ${isOpen ? "bg-celeste" : "bg-white"} rounded`} key={i} />
+        ))}
     </div>
 );
