@@ -5,7 +5,7 @@ import { FC, useState } from "react";
 export const NavBar: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className="w-full h-20 fixed bg-gray flex flex-row justify-between items-center">
+        <nav className="w-full h-20 fixed bg-gray flex flex-row justify-between items-center z-50">
             <div className="flex ml-8">
                 <Image src="/svg/salty-logo-white.svg" width={130} height={70} />
             </div>
