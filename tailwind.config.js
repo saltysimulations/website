@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         gray: { DEFAULT: '#252525' },
         celeste: { DEFAULT: '#b9faf8' },
+        amethyst: { DEFAULT: '#a663cc' },
         frenchviolet: { DEFAULT: '#6F2DBD' },
       },
       backgroundImage: theme => ({
