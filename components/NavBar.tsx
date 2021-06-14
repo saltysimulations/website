@@ -27,7 +27,8 @@ export const NavBar: FC = () => {
                 } top-20 w-full md:w-auto justify-around items-center text-white bg-gray md:bg-transparent text-lg mr-4 transition-opacity duration-400`}
             >
                 <NavItem label="Home" path="/" />
-                <NavItem label="Projects" path="/projects" />
+                <NavItem label="74S" path="/74s" />
+                <NavItem label="SaltyReplay" path="/saltyreplay" />
                 <NavItem label="Documentation" path="/documentation" />
                 <NavItem label="About" path="/about" />
             </div>
