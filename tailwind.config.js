@@ -16,6 +16,7 @@ module.exports = {
         'raleway': ['Raleway', 'sans-serif'],
       },
       fontSize: {
+        '7.5xl': '5.5rem',
         '8xl': '10rem',
         '9xl': '12rem',
       },
