@@ -9,7 +9,7 @@ const SaltyReplay: FC = () => (
                 <span className="text-celeste">ef</span>ined.</h1>
         </div>
         <div className="mx-10 max-w-lg lg:max-w-full">
-            <Image src="/png/saltyreplay.png" width={900} height={554.07} className=""/>
+            <Image src="/png/saltyreplay.png" width={900} height={554.07} />
         </div>
         <div className="absolute bottom-0 text-gray-500 my-10">
             <h4>Coming sometime between now and the future</h4>
