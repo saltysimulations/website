@@ -58,7 +58,7 @@ const CodeOfConduct: FC = () => (
                     Representation of a project may be further defined and clarified by project maintainers.
                 </p>
                 <CocHeader text="enforcement" />
-                <p className="py-4">
+                <p className="py-4 mb-6">
                     Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting
                     the project team at <a className="text-amethyst" href="mailto:contact@saltysimulations.com">contact@saltysimulations.com</a>.
                     All complaints will be reviewed and investigated and will result in a response that is deemed necessary
@@ -67,6 +67,14 @@ const CodeOfConduct: FC = () => (
 
                     Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary
                     or permanent repercussions as determined by other members of the project's leadership.
+                </p>
+                <CocHeader text="attribution" />
+                <p className="py-4">
+                    This Code of Conduct is adapted from the <a className="text-amethyst" href="https://www.contributor-covenant.org/">Contributor Covenant</a>,
+                    version 1.4, available at <a className="text-amethyst" href=
+                        "https://www.contributor-covenant.org/version/1/4/code-of-conduct.html">https://www.contributor-covenant.org/version/1/4/code-of-conduct.html</a> For
+                    answers to common questions about this code of conduct,
+                    see <a className="text-amethyst" href="https://www.contributor-covenant.org/faq">https://www.contributor-covenant.org/faq</a>
                 </p>
             </div>
         </section>
