@@ -13,7 +13,6 @@ export const Footer: FC = () => (
             <SocialIcon url="https://youtube.com/saltysimulations" />
         </div>
         <div className="text-xs md:text-lg flex text-center">
-            <FooterLink path="/tos" label="Terms of Service" />
             <FooterLink path="/privacy" label="Privacy Policy" />
             <FooterLink path="/coc" label="Code of Conduct" />
             <FooterLink path="https://github.com/saltysimulations/website" label="Source Code" />
