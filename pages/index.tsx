@@ -8,8 +8,8 @@ const Index = () => (
             <h3 className="text-lg md:text-xl mt-5">Free. Open Source. Feature Packed.</h3>
         </div>
         <div className="flex">
-            <LinkButton path="/" name="Download" bg="frenchviolet"/>
-            <LinkButton path="/74s" name="Read More" bg="gray"/>
+            <LinkButton path="/" name="Download" bg="frenchviolet" className="mx-3 my-7"/>
+            <LinkButton path="/74s" name="Read More" bg="gray" className="mx-3 my-7"/>
         </div>
     </section>
 );
