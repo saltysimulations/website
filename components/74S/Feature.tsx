@@ -28,7 +28,7 @@ const FeatureImage: FC = () => (
 
 export const Feature: FC<FeatureProps> = (props) => (
     <>
-        <div className="w-full h-screen md:h-96 flex text-center divide-x divide-gray-600">
+        <div className="w-full h-screen md:h-96 flex text-center">
             <div className="hidden md:flex flex-row text-center">
                 {props.side === "left" ? (
                     <>
